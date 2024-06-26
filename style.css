@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto+Mono&display=swap");
+
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Protest Riot";
+  color: #333;
+  --main-color: rgb(22, 72, 99);
+  --light-text-color: rgb(245, 245, 245);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: min-content;
+  /* max-width: 800px; */
+}
+
+.bio-container,
+.achievements-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.sub-section-title {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0;
+}
+
+.bio-container p {
+  margin: 1rem 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.atari-img {
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.playland-img {
+  max-width: 500px;
+  margin: 15px auto 0;
+  display: block;
+}
+
+.playland-img-container {
+  max-width: 500px;
+  margin: 15px auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playland-img-container img {
+  width: 150px;
+}
+
+.playland-pic {
+  box-shadow: 5px 7px 19px -3px rgba(0, 0, 0, 0.55);
+}
+
+@media screen and (max-width: 530px) {
+  .playland-img-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .playland-img-container img {
+    width: 60%;
+  }
+
+  .playland-img {
+    width: 85%;
+  }
+}
+
+.introduction,
+.achievements {
+  background: var(--main-color);
+  color: var(--light-text-color);
+}
+
+.introduction {
+  box-shadow: 5px 7px 19px -3px rgba(0, 0, 0, 0.55);
+}
+
+.achievements {
+  box-shadow: 5px -5px 19px -3px rgba(0, 0, 0, 0.55);
+}
+
+.intro {
+  display: flex;
+  max-width: 750px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.intro h3 {
+  letter-spacing: 10px;
+}
+
+.intro h1,
+p {
+  letter-spacing: 1px;
+}
+
+.intro p {
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.rotten {
+  display: inline-block;
+  transform: rotate(-180deg);
+}
+
+.achievements {
+  padding: 1rem 0 4rem;
+  margin: 2rem 0 0;
+}
